@@ -1,8 +1,12 @@
 
 <!doctype html>
 <html lang="en-US">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'polls/style.css' %}">
 
   <body>
+    <h1>Polls</h1>
+    <p>Welcome to the Polls app!</p>
     {% if latest_question_list %}
         <ul>
         {% for question in latest_question_list %}
