@@ -1,7 +1,7 @@
 ---
 creation_rules:
   - path_regex: /*secrets.yaml$
-    encrypted_regex: "^(id|secret|bootstraptoken|secretboxencryptionsecret|token|ca|crt|key)$"
+    encrypted_regex: "(id|secret|bootstraptoken|secretboxencryptionsecret|token|ca|crt|key)$"
     key_groups:
         - pgp: [F45947DEA0E014A0B9BEC1A6B0CCAD7466E4F9E2]
 
